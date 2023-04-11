@@ -4,12 +4,14 @@ import './App.css';
 
 
 import Entry from './pages/Entry/Entry.page';
+import DefaultLayout from './layout/DefaultLayout';
 
 function App() {
   return (
     <div className="App">
-      <Entry />
-
+      <DefaultLayout>
+        //Dashboard
+      </DefaultLayout>
     </div>
   );
 }

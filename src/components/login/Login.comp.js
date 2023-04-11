@@ -7,9 +7,9 @@ const LoginForm = ({ handleOnSubmit, handleOnChange, formSwitcher, email, pass }
         <Container>
             <Row>
                 <Col>
-                    <h1 className='text-info text-center'>Client Login</h1>
+                    <h1 className='text-dark text-center'>Client Login</h1>
                     <hr />
-                    <Form onSubmit={handleOnSubmit} autoComplete='off'>
+                    <Form className='Frm' onSubmit={handleOnSubmit} autoComplete='off'>
                         <Form.Group>
                             <Form.Label>
                                 Email Address
@@ -45,15 +45,13 @@ const LoginForm = ({ handleOnSubmit, handleOnChange, formSwitcher, email, pass }
 
             <Row>
                 <Col>
-                    <a href='#!' onClick={() => formSwitcher('reset')}>Forgot Password?</a>
+                    <a className='text-dark' href='#!' onClick={() => formSwitcher('reset')}>Forgot Password?</a>
                 </Col>
             </Row>
 
         </Container>
     )
 };
-
-export default LoginForm
 
 LoginForm.propTypes = {
     handleOnChange: PropTypes.func.isRequired,
@@ -63,4 +61,8 @@ LoginForm.propTypes = {
     formSwitcher: PropTypes.func.isRequired
 
 }
+
+export default LoginForm
+
+
 

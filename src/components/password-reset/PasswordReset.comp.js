@@ -7,7 +7,7 @@ const PasswordReset = ({ handleOnResetSubmit, handleOnChange, formSwitcher, emai
         <Container>
             <Row>
                 <Col>
-                    <h1 className='text-info text-center'>Reset Password</h1>
+                    <h1 className='text-dark text-center'>Reset Password</h1>
                     <hr />
                     <Form onSubmit={handleOnResetSubmit} autoComplete='off'>
                         <Form.Group>
@@ -32,7 +32,7 @@ const PasswordReset = ({ handleOnResetSubmit, handleOnChange, formSwitcher, emai
 
             <Row>
                 <Col>
-                    <a href='#!' onClick={() => formSwitcher('login')}>Login Now!</a>
+                    <a href='#!' className='text-dark' onClick={() => formSwitcher('login')}>Login Now!</a>
                 </Col>
             </Row>
 
